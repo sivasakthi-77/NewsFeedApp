@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NewsWave</title>
+  <link rel="icon" href="Logo.jpeg"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>NewsWave</h1>
+    </div>
+    <div class="controls">
+      <input id="searchInput" type="search" placeholder="Search news and press Enter..." aria-label="Search news" />
+      
+    </div>
+  </header>
+
+  <nav class="categories" id="categories">
+    <!-- categories inserted by JS -->
+  </nav>
+
+  <main>
+    <section id="status" class="status hidden">
+      <div id="loader" class="loader hidden" aria-hidden="true"></div>
+      <p id="statusText"></p>
+    </section>
+
+    <section id="newsGrid" class="news-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name — NewsWave</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
